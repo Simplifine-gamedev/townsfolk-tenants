@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "townsfolk_tenants:item/guest_ledger"
+  }
+}

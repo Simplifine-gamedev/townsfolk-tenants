@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "townsfolk_tenants",
+  "version": "${version}",
+  "name": "Townsfolk: Tenants",
+  "description": "Build hotel rooms and collect rent from villager tenants. Part of the Townsfolk series.",
+  "authors": ["Simplifine"],
+  "contact": {
+    "homepage": "https://github.com/Simplifine-gamedev"
+  },
+  "license": "MIT",
+  "icon": "assets/townsfolk_tenants/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.townsfolk.tenants.TownsfolkTenantsMod"],
+    "client": ["com.townsfolk.tenants.TownsfolkTenantsModClient"]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*",
+    "townsfolk_signs": "*"
+  }
+}

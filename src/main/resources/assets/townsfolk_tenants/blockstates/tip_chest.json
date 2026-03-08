@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "townsfolk_tenants:block/tip_chest", "y": 0 },
+    "facing=south": { "model": "townsfolk_tenants:block/tip_chest", "y": 180 },
+    "facing=west": { "model": "townsfolk_tenants:block/tip_chest", "y": 270 },
+    "facing=east": { "model": "townsfolk_tenants:block/tip_chest", "y": 90 }
+  }
+}

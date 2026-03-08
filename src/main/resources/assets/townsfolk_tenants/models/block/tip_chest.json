@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "townsfolk_tenants:block/tip_chest"
+  }
+}
