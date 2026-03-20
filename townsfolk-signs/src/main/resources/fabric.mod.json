@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "townsfolk_signs",
+  "version": "${version}",
+  "name": "Townsfolk Signs",
+  "description": "Shared sign injection system for Townsfolk building mods. Adds room declaration behavior to vanilla wall signs.",
+  "authors": ["Simplifine"],
+  "contact": {
+    "homepage": "https://github.com/Simplifine-gamedev"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.townsfolk.signs.TownsfolkSignsMod"]
+  },
+  "mixins": ["townsfolk_signs.mixins.json"],
+  "accessWidener": "townsfolk_signs.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

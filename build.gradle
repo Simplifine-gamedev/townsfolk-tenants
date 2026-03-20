@@ -12,6 +12,9 @@ base {
 
 repositories {
     mavenCentral()
+    flatDir {
+        dirs 'townsfolk-signs/build/libs'
+    }
 }
 
 dependencies {
@@ -20,8 +23,9 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     
-    // Include townsfolk-signs as compile-time dependency (jar-in-jar handled separately)
-    modCompileOnly files("../townsfolk-signs/build/libs/townsfolk-signs-1.0.0.jar")
+    // Include townsfolk-signs as jar-in-jar dependency (embedded in final JAR)
+    modImplementation(":townsfolk-signs:1.0.0")
+    include(":townsfolk-signs:1.0.0")
 }
 
 processResources {
